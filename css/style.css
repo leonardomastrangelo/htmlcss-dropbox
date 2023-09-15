@@ -33,13 +33,29 @@ body
 {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 60px 100px 0;
+    padding: 60px 70px 0;
     position: relative;
+}
+
+.container-main
+{
+    max-width: 1000px;
+    margin: 0px auto;
 }
 
 .debug
 {
-    border: 1px solid orange;
+    border: 1px solid lightslategray;
+}
+
+h2
+{
+    font-size: 2em;
+}
+
+h3
+{
+    font-size: 1.8em;
 }
 
 ul
@@ -96,8 +112,20 @@ button
     align-items: center;
     align-content: center;
 }
-
+.flex-start
+{
+    align-items: flex-start;
+}
 /* utilities */
+.translation
+{
+    transform: translateY(50px);
+}
+
+.t-center
+{
+    text-align: center;
+}
 
 /* HEADER */
 header
@@ -113,6 +141,7 @@ nav
     width: 100%;
     height: 48px;
     position: fixed;
+    z-index: 1000;
     background-color: var(--color-bg-main);
 }
 nav ul li
@@ -126,8 +155,8 @@ nav a
     color: var(--color-bg-footer);
 }
 
-/* sexione jumbo */
-section 
+/* sezione jumbo */
+header section 
 {
     padding-top: 48px;
     background-color: var(--color-bg-hero);
@@ -137,7 +166,7 @@ h1
 {
     font-size: 5em;
 }
-
+/* right */
 header section .right
 {
     width: 60%;
@@ -148,7 +177,7 @@ header section .right
 {
     width: 100%;
 }
-
+/* left */
 .left
 {
     width: 40%;
@@ -165,10 +194,68 @@ header section .right
     font-size: 3em;
 }
 
-.translation
+/* MAIN */
+main
 {
-    transform: translateY(50px);
-
+    padding-top: 100px;
+}
+/* SECTION 1 */
+.radio
+{
+    padding: 50px 50px 50px 0;
+    display: inline-block;
+}
+.column
+{
+    width: calc(100% / 3 - 40px);
+    height: 750px;
+    font-size: 0.85em;
+    gap: 0 40px 0 0;
 }
 
+.column > div:first-child
+{
+    padding: 8px 0;
+    border-bottom: 1px solid lightslategray;
+}
+
+.info-body
+{
+    padding: 30px 30px 0px 30px;
+}
+
+.info-section
+{
+    padding: 0 0 35px 0;
+}
+
+.spacial
+{
+    padding: 14px 0;
+}
+
+.pay-time
+{
+    opacity: 0.5;
+}
+
+.column button
+{
+    width: 100%;
+}
+
+.info-section hr
+{
+    width: 15%;
+}
+
+.focus-points ul li
+{
+    padding: 10px 0;
+}
+
+.focus-points i
+{
+    color: var(--color-bg-bottom);
+}
 
