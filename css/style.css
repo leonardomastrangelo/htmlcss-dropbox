@@ -29,6 +29,14 @@ body
     font-family: 'Open Sans', sans-serif;
 }
 
+.container-large
+{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 100px 0;
+    position: relative;
+}
+
 .debug
 {
     border: 1px solid orange;
@@ -59,6 +67,7 @@ button
 {
     background-color: var(--color-bg-main);
 }
+
 /* flex-utilities */
 .d-flex
 {
@@ -66,16 +75,29 @@ button
     flex-flow: row wrap;
 }
 
+
+.column-flex
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+
 .j-between
 {
     justify-content: space-between;
 }
 
+.j-center
+{
+    justify-content: center;
+}
 .a-center
 {
     align-items: center;
     align-content: center;
 }
+
+/* utilities */
 
 /* HEADER */
 header
@@ -91,6 +113,7 @@ nav
     width: 100%;
     height: 48px;
     position: fixed;
+    background-color: var(--color-bg-main);
 }
 nav ul li
 {
@@ -103,9 +126,49 @@ nav a
     color: var(--color-bg-footer);
 }
 
-header section 
+/* sexione jumbo */
+section 
 {
     padding-top: 48px;
+    background-color: var(--color-bg-hero);
+}
+
+h1
+{
+    font-size: 5em;
+}
+
+header section .right
+{
+    width: 60%;
+    min-width: 400px;
+}
+
+.right img
+{
+    width: 100%;
+}
+
+.left
+{
+    width: 40%;
+}
+
+.left div
+{
+    padding: 25px 0;
+}
+
+.left i
+{
+    padding-top: 80px;
+    font-size: 3em;
+}
+
+.translation
+{
+    transform: translateY(50px);
+
 }
 
 
