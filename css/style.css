@@ -320,15 +320,15 @@ main
     width: calc(100% / 3 - 50px);
     margin-right: 50px;
     padding: 20px 0;
+    min-width: 250px;
 }
 .card h3
 {
     padding-bottom: 12px;
 }
 
-.wrapper
-{
-    padding: 40px 0 0 0;
+section h2{
+    padding-bottom: 40px;
 }
 
 
