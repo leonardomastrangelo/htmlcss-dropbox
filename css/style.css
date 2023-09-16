@@ -353,7 +353,7 @@ section .little
 .square-mini
 {
     width: calc(100% / 2);
-    min-width: 200px;
+    min-width: 100px;
     padding: 110px;
     position: relative;
 }
