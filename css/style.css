@@ -27,6 +27,7 @@
 body
 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 .container-large
@@ -41,6 +42,7 @@ body
 {
     max-width: 1000px;
     margin: 0px auto;
+    padding: 60px 0;
 }
 
 .debug
@@ -50,12 +52,12 @@ body
 
 h2
 {
-    font-size: 2em;
+    font-size: 2.8em;
 }
 
 h3
 {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 ul
@@ -73,6 +75,7 @@ button
     padding: 8px 16px;
     border-radius: 3px;
     border: none;
+    background-color: white;
 }
 .btn-dark
 {
@@ -115,6 +118,7 @@ button
 .flex-start
 {
     align-items: flex-start;
+    align-content: flex-start;
 }
 
 .stretch
@@ -130,6 +134,11 @@ button
 .t-center
 {
     text-align: center;
+}
+
+.fluid
+{
+    width: 100%;
 }
 
 /* HEADER */
@@ -172,37 +181,38 @@ h1
     font-size: 5em;
 }
 /* right */
-header section .right
+section .big
 {
-    width: 60%;
-    min-width: 400px;
+    width: 65%;
+    min-width: 500px;
 }
 
-.right img
-{
-    width: 100%;
-}
 /* left */
-.left
+section .little
 {
-    width: 40%;
+    max-width: 450px;
+    width: 35%;
 }
 
-.left div
+.little div
 {
     padding: 25px 0;
 }
 
-.left i
+.little i
 {
-    padding-top: 80px;
+    padding-top: 120px;
     font-size: 3em;
+}
+.little p
+{
+    line-height: 1.5em;
 }
 
 /* MAIN */
 main
 {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 /* SECTION 1 */
 .radio
@@ -213,11 +223,11 @@ main
 .column
 {
     width: calc(100% / 3 - 40px);
-    font-size: 0.85em;
-    gap: 0 40px 0 0;
+    margin: 0 40px 0 0;
+    min-width: 200px;
 }
 
-.column > div:first-child
+.column > div:first-child, .h-column > div:first-child
 {
     padding: 8px 0;
     border-bottom: 1px solid lightslategray;
@@ -262,4 +272,66 @@ main
 {
     color: var(--color-bg-bottom);
 }
+
+.h-column
+{
+    margin: 0 40px 0 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.h-column h3
+{
+    padding-bottom: 14px;
+}
+
+.square-left
+{
+    width: 60%;
+    min-width: 300px;
+}
+
+.square-right
+{
+    max-width: 400px;
+    min-width: 300px;
+}
+
+
+.description
+{
+    padding: 50px;
+}
+
+.description p 
+{
+    padding: 17px 0 35px 0;
+    font-size: 1.1em;
+}
+
+.btn3
+{
+    border: 1px solid black;
+}
+
+/* section 3 */
+.card
+{
+    width: calc(100% / 3 - 50px);
+    margin-right: 50px;
+    padding: 20px 0;
+}
+.card h3
+{
+    padding-bottom: 12px;
+}
+
+.wrapper
+{
+    padding: 40px 0 0 0;
+}
+
+
+
+
 
