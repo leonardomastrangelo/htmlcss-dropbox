@@ -122,6 +122,12 @@ button
     background-color: var(--color-bg-main);
 }
 
+/* Hover Effect */
+.square-mini:hover
+{
+    box-shadow: inset 0 0 10px 12px var(--color-bg-main);
+}
+
 /* flex-utilities */
 .d-flex
 {
