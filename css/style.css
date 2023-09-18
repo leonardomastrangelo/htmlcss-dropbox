@@ -57,6 +57,10 @@
 }
 
 /* GENERAL */
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     font-family: 'Open Sans', sans-serif;
@@ -267,8 +271,9 @@ section .little
 
 .little i
 {
-    padding-top: 120px;
     font-size: 3em;
+    padding-top: 15px;
+    color: black;
 }
 .little p
 {
