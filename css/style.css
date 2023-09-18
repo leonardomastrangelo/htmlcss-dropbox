@@ -1,6 +1,6 @@
 /* palette */
 :root {
-	--color-bg-hero: #b8d1e5;
+	--color-bg-hero-light: #b8d1e5;
 	--color-bg-footer: #000000;
 	--color-bg-main: #ffffff;
 	--color-box-8: #ffd830;
@@ -210,7 +210,7 @@ nav a
     text-decoration: none;
     color: var(--color-bg-footer);
     padding: 0px 16px;
-    display: inline-block;
+    display: block;
     line-height: 60px;
 }
 .subnav-content
@@ -241,7 +241,7 @@ nav a
 header section 
 {
     padding-top: 60px;
-    background-color: var(--color-bg-hero);
+    background-color: var(--color-bg-hero-light);
     position: relative;
 }
 
@@ -424,7 +424,7 @@ section .little
 /* SECTION 6 */
 .section-6
 {
-    background-color: var(--color-bg-hero);
+    background-color: var(--color-bg-hero-light);
     padding: 80px;
 }
 .section-6 button
@@ -489,6 +489,54 @@ footer select
     color: var(--color-bg-main);
     border: none;
     text-decoration: none;
+}
+
+/* DOWNLOAD.HTML */
+/* palette */
+:root {
+	--color-light: #f7f5f3;
+	--color-bg-hero: #BE4B0A;
+	--color-dark: #1d1919;
+	--color-dark-contrast: #2b2929;
+	--color-secondary: #2b374e;
+}
+/* general */
+#download .anchor-dark
+{
+    color: black;
+    font-weight: 600;
+    display: block;
+}
+#download header 
+{
+    padding-top: 60px;
+}
+#download h1
+{
+    font-size: 3em;
+}
+#download .des-1
+{
+    width: 30%;
+    min-width: 352px;
+    padding: 40px;
+    background-color: var(--color-light);
+}
+#download .hero1
+{
+    width: 70%;
+    min-width: 820px;
+    padding: 40px;
+    background-color: var(--color-bg-hero);
+}
+#download .des-1 .btn-dark
+{
+    padding: 25px;
+    font-size: 1.1em;
+}
+.fa-solid.fa-arrow-right
+{
+    padding: 0 15px;
 }
 
 
