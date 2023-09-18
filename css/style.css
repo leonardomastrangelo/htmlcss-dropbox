@@ -115,6 +115,7 @@ button
     border-radius: 3px;
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 .btn-dark
 {
@@ -215,6 +216,7 @@ nav a
 {
     display: none;
 }
+
 .subnav:hover .subnav-content
 {
     display: block;
@@ -224,15 +226,13 @@ nav a
     z-index: 1000;
     width: 100%;
     padding: 10px;
+    background-color: lightslategray;
 }
 .subnav:hover .btn
 {
     background-color: lightslategray;
 }
-.subnav:hover .subnav-content
-{
-    background-color: lightslategray;
-}
+
 .subnav-content a:hover 
 {
     background-color: var(--color-box-8);
@@ -388,18 +388,19 @@ section .little
 .square-big
 {
     width: calc(100% / 3);
-    min-width: 400px;
+    height: calc(100vw / 3);
+    min-width: 450px;
+    min-height: 460px;
 }
 .square-mini
 {
-    width: calc(100% / 2);
-    min-width: 100px;
+    width: 50%;
     padding: 110px;
     position: relative;
 }
 .square-mini img 
 {
-    width: 90px;
+    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -450,13 +451,14 @@ section .little
 {
     border-bottom: 1px solid lightslategray;
 }
-summary
+.faq
 {
-    list-style: none;
+    display: none;
 }
-summary:hover
+.question:hover .faq
 {
-    cursor: pointer;
+    display: block;
+    padding-top: 20px;
 }
 
 /* FOOTER */
