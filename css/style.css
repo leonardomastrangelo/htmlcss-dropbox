@@ -127,6 +127,14 @@ button
 {
     box-shadow: inset 0 0 10px 12px var(--color-bg-main);
 }
+.btn-dark:hover
+{
+    background-color: #0057E5;
+}
+.btn-light:hover, .btn3:hover
+{
+    background-color: #F3EEE8;
+}
 
 /* flex-utilities */
 .d-flex
@@ -180,8 +188,6 @@ button
 {
     width: 100%;
 }
-
-/* HEADER */
 
 /* navbar */
 nav
