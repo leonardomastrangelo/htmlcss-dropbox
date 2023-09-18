@@ -76,7 +76,7 @@ main section
 }
 .container-large
 {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 60px 70px 0;
     position: relative;
@@ -84,6 +84,7 @@ main section
 .container-main
 {
     max-width: 1000px;
+    padding: 0 5px;
     margin: 0px auto;
 }
 .debug
@@ -220,17 +221,15 @@ nav a
 .subnav:hover .subnav-content
 {
     display: block;
-    position: absolute;
-    left: 0;
+    position: absolute;  
     top: 60px;
     z-index: 1000;
-    width: 100%;
     padding: 10px;
     background-color: lightslategray;
 }
 .subnav:hover .btn
 {
-    background-color: lightslategray;
+    background-color: var(--color-box-1);
 }
 
 .subnav-content a:hover 
@@ -345,16 +344,14 @@ section .little
 .square-left
 {
     width: 60%;
-    min-width: 300px;
+    min-width: 490px;
 }
 
 .square-right
 {
-    max-width: 400px;
+    width: 40%;
     min-width: 300px;
 }
-
-
 .description
 {
     padding: 50px;
@@ -375,8 +372,7 @@ section .little
 .card
 {
     width: calc(100% / 3 - 50px);
-    margin-right: 50px;
-    padding: 20px 0;
+    padding: 20px 5px;
     min-width: 250px;
 }
 .card h3
@@ -390,7 +386,7 @@ section .little
     width: calc(100% / 3);
     height: calc(100vw / 3);
     min-width: 450px;
-    min-height: 460px;
+    min-height: 462px;
 }
 .square-mini
 {
