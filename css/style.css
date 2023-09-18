@@ -538,6 +538,25 @@ footer select
 {
     padding: 0 15px;
 }
+.spacial-big
+{
+    padding-bottom: 30px;
+}
+#download main
+{
+    background-color: var(--color-dark);
+    color: var(--color-bg-main);
+    padding: 30px 0px;
+}
+#download h2
+{
+    font-size: 1.7em;
+}
+#download .container-s1
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 
 
