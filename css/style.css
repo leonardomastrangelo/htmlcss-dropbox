@@ -60,7 +60,7 @@
 body
 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 main
 {
@@ -182,37 +182,58 @@ button
 }
 
 /* HEADER */
-header
-{
-    position: relative;
-}
 
 /* navbar */
 nav
 {
-    padding: 5px;
+    padding: 0 5px;
     width: 100%;
-    height: 48px;
+    min-height: 60px;  
     position: fixed;
     z-index: 1000;
     background-color: var(--color-bg-main);
 }
-nav ul li
-{
-    padding: 0 20px;
-}
-
 nav a
 {
     text-decoration: none;
     color: var(--color-bg-footer);
+    padding: 0px 16px;
+    display: inline-block;
+    line-height: 60px;
+}
+.subnav-content
+{
+    display: none;
+}
+.subnav:hover .subnav-content
+{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px;
+}
+.subnav:hover .btn
+{
+    background-color: lightslategray;
+}
+.subnav:hover .subnav-content
+{
+    background-color: lightslategray;
+}
+.subnav-content a:hover 
+{
+    background-color: var(--color-box-8);
 }
 
 /* sezione jumbo */
 header section 
 {
-    padding-top: 48px;
+    padding-top: 60px;
     background-color: var(--color-bg-hero);
+    position: relative;
 }
 
 h1
@@ -252,12 +273,15 @@ section .little
 .radio
 {
     display: inline-block;
-    padding: 0 50px 50px 0;
+    padding: 0 0 40px 0;
+}
+.radio label
+{
+    margin-right: 20px;
 }
 .column
 {
-    width: calc(100% / 3 - 40px);
-    margin: 0 40px 0 0;
+    width: 30%;
     min-width: 200px;
 }
 .column > div:first-child, .h-column > div:first-child
@@ -291,7 +315,7 @@ section .little
 }
 .focus-points ul li
 {
-    padding: 10px 0;
+    padding: 14px 0;
 }
 .focus-points i
 {
@@ -299,7 +323,6 @@ section .little
 }
 .h-column
 {
-    margin: 0 40px 0 0;
     margin-top: 40px;
     width: 100%;
 }

@@ -14,29 +14,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="d-flex j-between">
+        <!-- leftbar -->
+        <div class="wrapper d-flex a-center">
+            <img src="img-dropbox/img/logo-small.png" alt="logo">
+            <div class="subnav">
+              <a class="btn" href="#">Perchè Dropbox</a>
+            </div>
+            <div class="subnav">
+              <a class="btn" href="#">Servizi</a>
+              <div class="subnav-content">
+                <a href="#bring">Trasporto</a>
+                <a href="#deliver">Consegna</a>
+                <a href="#package">Package</a>
+                <a href="#express">Spedizione</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <a class="btn" href="#">Piani e Prezzi</a>
+            </div>
+        </div>
+        <!-- rightbar -->
+        <div class="wrapper d-flex">
+            <div class="subnav">
+                <a class="btn" href="#">Supporto</a>
+            </div>
+            <div class="subnav">
+                <a class="btn" href="#">Contatta l'ufficio vendite</a>
+            </div>
+            <a href="#"><button class="btn-light">Accedi</button></a>
+            <a href="#"><button class="btn-dark">Inizia</button></a>
+        </div>
+    </nav>
     <!-- HEADER -->
     <header>
         <!-- navbar -->
-        <nav class="d-flex j-between a-center">
-            <!-- left-nav -->
-            <div class="d-flex a-center">
-                <div id="icon">
-                    <img src="img-dropbox/img/logo-small.png" alt="Dropbox-logo">
-                </div>
-                <ul class="d-flex">
-                    <li><a href="#">Perchè Dropbox</a></li>
-                    <li><a href="#">Funzioni</a></li>
-                    <li><a href="#">Piani e Prezzi</a></li>
-                </ul>
-            </div>
-            <!-- right-nav -->
-            <ul class="d-flex a-center">
-                <li><a href="#">Supporto</a></li>
-                <li><a href="#">Contatta l'ufficio vendite</a></li>
-                <li><button class="btn-light">Accedi</button></li>
-                <li><button class="btn-dark">Inizia</button></li>
-            </ul>
-        </nav>
         <!-- sezione jumbo -->
         <section>
             <div class="container-large">
@@ -73,19 +85,15 @@
             <div class="container-main">
                 <!-- title -->
                 <h2>Trova il piano business che fa per te</h2>
-                <!-- input -->
-                <div>
+                <!-- input -->               
                     <div class="radio">
-                        <input type="radio" name="fatturazione-mensile" value="Fatturazione mensile">
-                        <label>Fatturazione mensile</label>
+                        <input type="radio" id="fatturazione-mensile" name="fatturazione-mensile" value="fatturazione-mensile">
+                        <label for="fatturazione-mensile">Fatturazione mensile</label>
+                        <input type="radio" id="fatturazione-annuale" name="fatturazione-annuale" value="fatturazione-annuale">
+                        <label for="fatturazione-annuale">Fatturazione annuale</label>                  
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="fatturazione-annuale" value="Fatturazione annuale">
-                        <label>Fatturazione annuale</label>
-                    </div>
-                </div>
 
-                <div class="d-flex j-between stretch j-center">
+                <div class="d-flex j-between stretch a-center">
 
                     <!-- 1 column -->
                     <div class="column debug">
