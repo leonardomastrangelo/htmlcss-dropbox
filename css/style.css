@@ -172,15 +172,20 @@ button
 }
 .flex-start
 {
-    align-items: flex-start;
-    align-content: flex-start;
     justify-content: flex-start;
+}
+.flex-end
+{
+    justify-content: flex-end;
 }
 .stretch
 {
     align-items: stretch;
 }
-
+.even
+{
+    flex-flow: row-reverse wrap;
+}
 /* utilities */
 .translation
 {
@@ -507,6 +512,10 @@ footer select
     font-weight: 600;
     display: block;
 }
+#download .anchor-light
+{
+    color: white;
+}
 #download header 
 {
     padding-top: 60px;
@@ -550,12 +559,28 @@ footer select
 }
 #download h2
 {
-    font-size: 1.7em;
+    font-size: 2.2em;
+}
+#download h3
+{
+    font-size: 1.5em;
+    padding-bottom: 20px;
 }
 #download .container-s1
 {
     max-width: 800px;
     margin: 0 auto;
+}
+#download .information
+{
+    width: 25%;
+    padding: 0 50px;
+}
+#download .image
+{
+    width: 60%;
+    padding: 40px 120px;
+    background-color: var(--color-dark-contrast);
 }
 
 
