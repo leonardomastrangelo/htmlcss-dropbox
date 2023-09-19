@@ -199,6 +199,15 @@ button
 {
     width: 100%;
 }
+.txt-indent
+{
+    text-indent: -9px;
+    padding: 5px 0 5px 15px;
+}
+.invert
+{
+    filter: invert(100%);
+}
 
 /* navbar */
 nav
@@ -336,6 +345,11 @@ section .little
 {
     color: var(--color-bg-bottom);
 }
+.focus-points ul li
+{
+    text-indent: -9px;
+    padding: 5px 0 5px 15px;
+}
 .h-column
 {
     margin-top: 40px;
@@ -401,7 +415,7 @@ section .little
 }
 .square-mini img 
 {
-    width: 30%;
+    width: 35%;
     position: absolute;
     top: 50%;
     left: 50%;
