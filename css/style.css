@@ -447,6 +447,7 @@ section .little
 {
     padding: 30px 0;
     border-top: 1px solid lightslategray;
+    cursor: pointer;
 }
 .question:last-child
 {
@@ -519,6 +520,11 @@ footer select
 {
     color: white;
 }
+.spacial-big
+{
+    padding-bottom: 30px;
+}
+/* header */
 #download header 
 {
     padding-top: 60px;
@@ -534,6 +540,7 @@ footer select
     padding: 40px;
     background-color: var(--color-light);
 }
+/* sezione jumbo 1 */
 #download .hero1
 {
     width: 70%;
@@ -557,10 +564,8 @@ footer select
 {
     padding: 0 15px;
 }
-.spacial-big
-{
-    padding-bottom: 30px;
-}
+
+/* main */
 #download main
 {
     background-color: var(--color-dark);
@@ -598,6 +603,7 @@ footer select
     background-color: var(--color-light);
     color: var(--color-dark);
 }
+/* sezione jumbo 2 */
 #download .jumbo2
 {
     padding: 50px 120px;
@@ -613,8 +619,9 @@ footer select
 #download .hero-box
 {
     width: calc(100% / 3);
-    padding: 0 20px 0 0;
+    padding: 0 10px;
 }
+/* footer */
 #download footer
 {
     margin: 0;
