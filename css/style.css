@@ -635,6 +635,16 @@ footer select
     width: calc(100% / 3);
     padding: 0 10px;
 }
+/* jumbo2 hover */
+#download #hvr
+{
+    position: relative;
+}
+#download #hvr:hover
+{
+    background: linear-gradient(99deg, rgba(233, 120, 16, 0.61) 0%, rgba(47, 195, 169, 0.46) 100%);
+    transition:all 3s;
+}
 /* footer */
 #download footer
 {
